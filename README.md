@@ -8,7 +8,7 @@ The provenance hash for WAGMI NFT Genesis Series is:
 f2982d58f8ec0a86a0d69a08778f8c2c1e493296ccabb59ff695c7a01a1c631c
 ```
 
-You can further validate the hash exists on the `PROVENANCE` field in our [smart contract](https://etherscan.io/address/0xa7d107c55566282dee5c0ff65522d6e6aca748ca#readContract#F2) as well as in the following [file in this repository]().
+You can further validate the hash exists on the `PROVENANCE` field in our [smart contract](https://etherscan.io/address/0xa7d107c55566282dee5c0ff65522d6e6aca748ca#readContract#F2) as well as in the following [file in this repository](https://github.com/goat-gaming-group/wagmigenesis-nft-provenance/blob/d8f07df300433a08772e2647378e31d721b68d9b/hashes/provenance.txt).
 
 ## What is a provenance?
 
@@ -19,5 +19,5 @@ Provenance refers to the origin of an object. A provenance hash, is a unique dig
 For the hash generation we use SHA-256 cryptographic hash functions. In order to verify authenticity and for you to generate hashes it is imperative that the same hashing algorithm is used.
 
 - First, we generated the hash of each image - which you can find in the respective `hashes/{imageId}.txt` file.
-- Secondly, we concatenated all the resulting hashes into a single huge string - which you can see in [this file]().
+- Secondly, we concatenated all the resulting hashes into a single huge string - which you can see in [this file](https://github.com/goat-gaming-group/wagmigenesis-nft-provenance/blob/d8f07df300433a08772e2647378e31d721b68d9b/hashes/concatenatedHashString.txt).
 - Finally, we hashed the contents of the concatenated string, which gave us the _provenance_ hash used in the smart contract.
